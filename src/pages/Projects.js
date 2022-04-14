@@ -134,6 +134,7 @@ const Services = () => {
                                                 <div className="box">
                                                     <div className="">
                                                         <img
+                                                        width="100%"
                                                             src={item.imgUrl}
                                                             alt={item.id}
                                                             className="post-img"

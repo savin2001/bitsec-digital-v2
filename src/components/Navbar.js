@@ -3,7 +3,6 @@ import Logo from "../assets/bitsecDigital.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
@@ -14,10 +13,6 @@ const Navbar = () => {
     const closeMenu = () => {
         setOpen(false);
     };
-
-    
-    
-    
 
     return (
         <>
@@ -33,7 +28,7 @@ const Navbar = () => {
                         {open ? <FiX /> : <FiMenu />}
                     </div>
                     <ul className={open ? "nav-links active" : "nav-links"}>
-                    <li className="nav-item">
+                        <li className="nav-item">
                             <Link
                                 to="/home"
                                 className="nav-link"
@@ -61,24 +56,6 @@ const Navbar = () => {
                                 About
                             </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/trainings"
-                                className="nav-link"
-                                onClick={closeMenu}
-                            >
-                                trainings
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link
-                                to="/focus"
-                                className="nav-link"
-                                onClick={closeMenu}
-                            >
-                                focus
-                            </Link>
-                        </li>
 
                         <li className="nav-item">
                             <Link
@@ -95,8 +72,9 @@ const Navbar = () => {
                                 className="nav-link"
                                 onClick={closeMenu}
                             >
-                                <button className="join button-wiggle">Contact</button>
-                                
+                                <button className="join button-wiggle">
+                                    Contact
+                                </button>
                             </Link>
                         </li>
                     </ul>

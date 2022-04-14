@@ -64,7 +64,7 @@ const Home = () => {
                             <Link to="/projects">
                                 <button className="join">
                                     Check out our work
-                                </button>{" "}
+                                </button>
                             </Link>
                         </div>
                     </div>

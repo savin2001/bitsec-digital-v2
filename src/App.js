@@ -12,7 +12,7 @@ import Services from "./pages/Projects";
 // import About from "./pages/About";
 // import Contact from "./pages/Contact";
 // import Products from "./pages/Products";
-// import Blog from "./pages/Blog";
+import Blog from "./pages/Blog";
 // import Service from "./pages/cat/Service";
 // import Product from "./pages/cat/Product";
 
@@ -47,11 +47,11 @@ function App() {
                         <Route path="/home" exact component={Home} />
 
                         <Route path="/projects" exact component={Services} />
+                        <Route path="/blog" exact component={Blog} />
 
                         {/* <Route path="/products" exact component={Products} />
 
                         <Route path="/about" exact component={About} />
-                        <Route path="/blog" exact component={Blog} />
                         <Route path="/contact" exact component={Contact} />
 
                         <Route
