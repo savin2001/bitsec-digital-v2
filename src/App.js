@@ -9,12 +9,10 @@ import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 import Home from "./pages/Home";
 import Services from "./pages/Projects";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-// import Products from "./pages/Products";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-// import Service from "./pages/cat/Service";
-// import Product from "./pages/cat/Product";
+import SingleBlog from "./pages/cat/SingleBlog";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -48,11 +46,12 @@ function App() {
 
                         <Route path="/projects" exact component={Services} />
                         <Route path="/blog" exact component={Blog} />
-
-                        {/* <Route path="/products" exact component={Products} />
+                        <Route path="/single-blog" exact component={SingleBlog} />
 
                         <Route path="/about" exact component={About} />
                         <Route path="/contact" exact component={Contact} />
+                        {/* <Route path="/products" exact component={Products} />
+
 
                         <Route
                             path="/projects/:id/:title/:body"

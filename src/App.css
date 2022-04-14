@@ -554,6 +554,21 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.about-landing {
+    background-image: url(https://images.unsplash.com/photo-1518481852452-9415b262eba4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWJvdXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.single-blog {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .landing {
     margin: 100px 0;
     padding: 2rem;
@@ -857,8 +872,6 @@ h1 strong {
 }
 /* End of home page */
 
-
-
 /* Contact page  */
 .contact-page {
     display: flex;
@@ -1075,14 +1088,13 @@ form .form-row .textarea {
 }
 .news {
     flex-grow: 4;
-
 }
 .news-card {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding: 1rem 0;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 .news-card .story-line {
     width: 100%;
@@ -1097,9 +1109,10 @@ form .form-row .textarea {
     justify-content: center;
 }
 .news-card .story-line p {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
 }
-.sidebar .list p small,.news-card .story-line p small {
+.sidebar .list p small,
+.news-card .story-line p small {
     color: var(--theme-colors);
 }
 .news-title {
@@ -1141,7 +1154,6 @@ label {
     font-family: "Lato", Arial, sans-serif;
     font-size: 16px;
     margin: 10px 1%;
-    max-width: 310px;
     min-width: 250px;
     overflow: hidden;
     position: relative;
@@ -1194,30 +1206,7 @@ label {
     z-index: -1;
 }
 
-.snip1527 .date {
-    background-color: #fff;
-    border-radius: 50%;
-    color: #700877;
-    font-size: 18px;
-    font-weight: 700;
-    min-height: 48px;
-    min-width: 48px;
-    padding: 10px 0;
-    position: absolute;
-    right: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    top: -25px;
-}
 
-.snip1527 .date span {
-    display: block;
-    line-height: 14px;
-}
-
-.snip1527 .date .month {
-    font-size: 11px;
-}
 
 .snip1527 h3,
 .snip1527 p {
@@ -1253,7 +1242,6 @@ label {
     transform: scale(1.1);
 }
 /* End of blog page */
-
 
 .innovatah {
     width: 120px !important;
@@ -1412,7 +1400,7 @@ html body .hide {
     * {
         transition: 0.3s ease;
     }
-    .sidebar{
+    .sidebar {
         display: none;
     }
     .news-card .story-line {
@@ -1548,10 +1536,10 @@ html body .hide {
     }
 }
 @media only screen and (max-width: 540px) {
-    .sidebar{
+    .sidebar {
         display: none;
     }
-    
+
     h1 {
         font-size: 1.4rem;
         padding: 0 0 10px 0;
