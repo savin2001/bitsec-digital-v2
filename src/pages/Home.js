@@ -146,12 +146,12 @@ const Home = () => {
                                 {projects.map((item) => (
                                     <ScrollAnimation
                                         animateIn="fadeIn"
-                                        animateOnce
+                                        animateOnce key={item.id}
                                     >
                                         <div
                                             className="col"
                                             id="service1"
-                                            key={item.id}
+                                            
                                         >
                                             <Link
                                                 to={

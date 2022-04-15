@@ -8,11 +8,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Loading from "./components/Loading";
 import Home from "./pages/Home";
-import Services from "./pages/Projects";
+import Project from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
+import Blog from "./pages/Blogs";
 import SingleBlog from "./pages/cat/SingleBlog";
+import SingleProject from "./pages/cat/SingleProject";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -44,9 +45,10 @@ function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/home" exact component={Home} />
 
-                        <Route path="/projects" exact component={Services} />
-                        <Route path="/blog" exact component={Blog} />
-                        <Route path="/single-blog" exact component={SingleBlog} />
+                        <Route path="/projects" exact component={Project} />
+                        <Route path="/projects/:id/:title" exact component={SingleProject} />
+                        <Route path="/blogs" exact component={Blog} />
+                        <Route path="/blogs/:id/:title" exact component={SingleBlog} />
 
                         <Route path="/about" exact component={About} />
                         <Route path="/contact" exact component={Contact} />

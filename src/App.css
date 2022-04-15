@@ -1082,12 +1082,25 @@ form .form-row .textarea {
 .sidebar .list {
     padding: 10px;
 }
+.sidebar .list:hover {
+    color: var(--theme-colors);
+    transition: 0.3s ease;
+}
+/* .sidebar .list:hover{
+    color: var(--theme-color)
+} */
+.news a,
 .sidebar .list a {
     text-decoration: none;
     color: inherit;
 }
 .news {
     flex-grow: 4;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .news-card {
     display: flex;
@@ -1115,6 +1128,7 @@ form .form-row .textarea {
 .news-card .story-line p small {
     color: var(--theme-colors);
 }
+
 .news-title {
     font-size: 2.5rem;
     font-weight: 500;
@@ -1205,8 +1219,6 @@ label {
     opacity: 0.8;
     z-index: -1;
 }
-
-
 
 .snip1527 h3,
 .snip1527 p {
@@ -1529,9 +1541,6 @@ html body .hide {
         width: 40% !important;
     }
     .service-container .row {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .api-list .row {
         grid-template-columns: repeat(2, 1fr);
     }
 }

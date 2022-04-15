@@ -59,7 +59,7 @@ const Navbar = () => {
 
                         <li className="nav-item">
                             <Link
-                                to="/blog"
+                                to="/blogs"
                                 className="nav-link"
                                 onClick={closeMenu}
                             >

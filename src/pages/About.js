@@ -214,7 +214,7 @@ const About = () => {
                                 {projects.map((item) => (
                                     <ScrollAnimation
                                         animateIn="fadeIn"
-                                        animateOnce
+                                        animateOnce key={item.id}
                                     >
                                         <figure className="snip1527">
                                             <div className="image">

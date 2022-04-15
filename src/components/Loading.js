@@ -8,10 +8,10 @@ const Loading = () => {
                     <h1>BitSec Digital</h1>
                 </div>
                 <svg width="200" height="200" id="svg">
-                    <circle id="dot1" class="shape" />
-                    <circle id="dot2" class="shape" />
-                    <circle id="dot3" class="shape" />
-                    <circle id="dot4" class="shape" />
+                    <circle id="dot1" className="shape" />
+                    <circle id="dot2" className="shape" />
+                    <circle id="dot3" className="shape" />
+                    <circle id="dot4" className="shape" />
                 </svg>
             </div>
         </div>
